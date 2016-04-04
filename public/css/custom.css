@@ -1,0 +1,143 @@
+/* Below is for the general form */
+
+html {
+	background-image: url("/img/brick_background.jpg");
+	z-index: 0;
+}
+
+body {
+	background-image: url("/img/brick_background.jpg");
+	z-index: 0;
+}
+
+ul {
+	z-index: 99;
+	list-style-type: none;
+	width: 100%;
+	padding: 0px;
+}
+
+li {
+	z-index: 99;
+	width: 100%;
+}
+
+img {
+	align-content: center;
+}
+
+
+/* Below is for page design 'constants' */
+
+.main-space-padding {
+	padding-bottom: 90px;
+}
+
+
+/* Below is for the image at <li> index['home'] */
+
+.top-bar {
+	align: center;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	background: #ffffff;
+}
+
+
+/* Below is for the <li> index[*ANY*] */
+
+.index-container {
+	align: center;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+.center-row {
+	align: center;
+	margin: auto;
+	padding: 0px;
+}
+
+@media (max-width: 991px) {
+	.center-row {
+		width: 300px;
+	}	
+}
+
+
+/* Below is for the <li> index['more info'] */
+
+.venue-icon {
+	width: 100%;
+	align: center;
+	padding-bottom: 20px;	
+}
+
+
+/* Below is for the <li> index['wedding party'] */
+
+.wedding-party-container {
+	align-content: center;
+	text-align: center;
+}
+
+.wedding-party-icon {
+	max-width: 80%;
+	padding-bottom: 20px;
+	align: center;
+	margin: auto;
+}
+
+
+/* Below is for the <li> index['registry'] */
+
+.registry-store-icon {
+	width: 300px;
+	height: 250px;
+	align: center;
+	padding-bottom: 20px;	
+}
+
+
+/* Below is for the menu items section */
+
+.menu-item-container {
+	width: 100%;
+	margin: 0px;
+}
+
+.img-centered {
+	float: none;
+	margin: 0 auto;
+}
+
+.img-sizer {
+	width: 100%;
+}
+
+@media (max-width: 768px) {
+	.menu-item-container {
+		padding-left: 20px;
+	}
+}
+
+
+/* Below is for adding an action class on mousemove */
+
+.big-on-hover {
+	width: 105%;
+}
+
+
+
+/* Below is for the image at <li> index['home'] */
+
+.bottom-bar {
+	align: center;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	z-index: 100;
+}

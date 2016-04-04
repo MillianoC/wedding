@@ -1,0 +1,13 @@
+{
+  "name": "nodewedding",
+  "version": "0.0.1",
+  "description": "Chris and Angie's Wedding Site",
+  "license": "UNLICENSED",
+  "dependancies": {
+    "express": "4.13.4"
+  },
+  "dependencies": {
+    "express": "^4.13.4",
+    "node": "0.0.0"
+  }
+}

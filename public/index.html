@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" ng-controller="myCtrl">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>Romano-Milliano Wedding</title>
+	<link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+	<!-- Bootstrap -->
+	<!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<!-- List holding interchangable views -->
+	<ul>
+		
+		<!-- Index['home'] -->
+		<li ng-show="viewIndex=='home'">	
+			<!-- 'Home' Image Container -->
+			<div class="container index-container">
+				<img src="img/index/home/home.jpg" alt="Home Header Image" style="width:100%">
+			</div>
+		</li>
+		<!-- Index['more info'] -->
+		<li ng-if="viewIndex=='more info'">
+			<!-- 'More Info' Container -->
+			<div class="container index-container">
+
+				<!-- 'More Info' Header -->
+				<div class="clearfix main-space-padding"></div>
+				<div class="index-header">
+					<img src="img/index/moreInfo/moreInfo_header.png" alt="More Info Header Image" style="width:100%">
+				</div>
+
+				<!-- 'More Info' Body -->
+				<div class="clearfix main-space-padding"></div>
+				<div class="wedding-party-container">
+					<div class="row center-row">
+						<div class="col-md-6">
+							<a href="https://www.google.com/maps/dir/''/jefferson+underground/@38.6062907,-90.2923669">
+								<img src="img/index/moreInfo/map.jpg" alt="Jefferson Map" 
+								class="venue-icon img-sizer">
+							</a>
+						</div>	
+						<div class="col-md-6">
+							<a href="http://www.jeffersonunderground.com/">
+								<img src="img/index/moreInfo/jeffunder.jpg" alt="Jefferson Site" 
+								class="venue-icon img-sizer">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li>
+		<!-- Index['wedding party'] -->
+		<li ng-if="viewIndex=='wedding party'">
+			<!-- 'Wedding Party' Container -->
+			<div class="container index-container">
+				<!-- 'Wedding Party' Header -->
+				<div class="clearfix main-space-padding"></div>
+				<div class="index-header">
+					<img src="img/index/weddingParty/weddingParty_header.png" alt="Registry Header Image" style="width:100%">
+				</div>
+				<!-- 'Wedding Party' Body -->
+				<div class="clearfix main-space-padding"></div>
+				<div class="wedding-party-container">
+					<img src="img/index/weddingParty/courtney_pic.jpg" alt="Courtney" 
+					class="wedding-party-icon">
+					<img src="img/index/weddingParty/tim_pic.jpg" alt="Tim" 
+					class="wedding-party-icon">
+					<img src="img/index/weddingParty/kayla_pic.jpg" alt="Kayla" 
+					class="wedding-party-icon">
+					<img src="img/index/weddingParty/ashley_pic.jpg" alt="Ashley" 
+					class="wedding-party-icon">
+					<img src="img/index/weddingParty/amanda_pic.jpg" alt="Amanda" 
+					class="wedding-party-icon">
+					<img src="img/index/weddingParty/nate_pic.jpg" alt="Nate" 
+					class="wedding-party-icon">
+					<img src="img/index/weddingParty/ben_pic.jpg" alt="Ben" 
+					class="wedding-party-icon">
+				</div>
+			</div>
+		</li>
+		<!-- Index['registry'] -->
+		<li ng-if="viewIndex=='registry'">
+			<!-- 'Registry' Container -->
+			<div class="container index-container">
+				<!-- 'Registry' Header -->
+				<div class="clearfix main-space-padding"></div>
+				<div class="index-header">
+					<img src="img/index/registry/registry_header.png" alt="Registry Header Image" style="width:100%">
+				</div>
+				<!-- 'Registry' Body -->
+				<div class="clearfix main-space-padding"></div>
+				<div class="row center-row">	
+					<div class="col-md-4">
+						<a href="http://www.crateandbarrel.com/gift-registry/angie-romano-and-chris-milliano/r5501095">
+							<img src="img/index/registry/candb.jpg" alt="Crate and Barrel" 
+							class="img-centered registry-store-icon">
+						</a>
+					</div>
+					<div class="col-md-4">
+						<a href="#">
+							<img src="img/index/registry/target.jpg" alt="Target" 
+							class="img-centered registry-store-icon">
+						</a>
+					</div>
+					<div class="col-md-4">
+						<a href="#">
+							<img src="img/index/registry/myregistry.jpg" alt="MyRegistry" 
+							class="img-centered registry-store-icon">
+						</a>
+					</div>
+				</div>
+			</div>
+		</li>
+		<!-- Index['photos'] -->
+		<li ng-if="viewIndex=='photos'">
+			<!-- 'Photos' Container -->
+			<div class="container index-container">
+				<!-- 'Photos' Header -->
+				<div class="clearfix main-space-padding"></div>
+				<div class="index-header">
+					<img src="img/index/photos/photos_header.png" alt="Registry Header Image" style="width:100%">
+				</div>
+				<!-- 'Photos' Body -->
+				<div class="clearfix main-space-padding"></div>
+				<div class="row center-row">	
+					<div class="col-md-4">
+						<img src="img/index/photos/1.jpg" alt="Photos" 
+						class="img-centered registry-store-icon">
+					</div>
+					<div class="col-md-4">
+						<img src="img/index/photos/2.jpg" alt="Photos" 
+						class="img-centered registry-store-icon">
+					</div>
+					<div class="col-md-4">
+						<img src="img/index/photos/3.jpg" alt="Photos" 
+						class="img-centered registry-store-icon">
+					</div>					
+				</div>
+			</div>
+		</li>
+	</ul>
+	<!-- Top bar -->
+	<div class="clearfix main-space-padding"></div>
+	<div class="container top-bar">
+		<input type="image" ng-mouseup="viewIndex='home'"
+		 src="img/banners/top_banner.jpg" alt="Top Banner" style="width:100%"/>
+	</div>
+	<!-- Menu Items -->
+	<div class="clearfix main-space-padding"></div>
+	<div class="container menu-item-container">	
+		<!-- First Row -->
+		<div class="row">	
+			<div class="col-sm-6 col-xs-12">
+				<a href="#">
+					<img src="img/index/moreInfo/moreinfo.png" alt="More Info"
+					 class="img-centered"
+					 ng-model="onHoverItem1"
+					 ng-init="onHoverItem1 = false"
+					 ng-mouseenter="onHoverItem1 = true"
+					 ng-mouseleave="onHoverItem1 = false"
+					 ng-class="{false: 'img-sizer', true: 'big-on-hover'}[onHoverItem1]"
+					 ng-mouseup="viewIndex='more info'"
+					 >
+				</a>
+			</div>
+			<div class="col-sm-6 col-xs-12">
+				<a href="#">
+					<img src="img/index/weddingParty/weddingparty.png" alt="Wedding Party"
+					 class="img-centered"
+					 ng-model="onHoverItem2"
+					 ng-init="onHoverItem2 = false"
+					 ng-mouseenter="onHoverItem2 = true"
+					 ng-mouseleave="onHoverItem2 = false"
+					 ng-class="{false: 'img-sizer', true: 'big-on-hover'}[onHoverItem2]"
+					 ng-mouseup="viewIndex='wedding party'"
+					 >
+				</a>
+			</div>
+		</div>
+		<!-- Second Row -->
+		<div class="row">
+			<div class="col-sm-6 col-xs-12 col-centered">
+				<a href="#">
+					<img src="img/index/registry/registry.png" alt="Registry"
+					 ng-model="onHoverItem3"
+					 ng-init="onHoverItem3 = false"
+					 ng-mouseenter="onHoverItem3 = true"
+					 ng-mouseleave="onHoverItem3 = false"
+					 ng-class="{false: 'img-sizer', true: 'big-on-hover'}[onHoverItem3]"
+					 ng-mouseup="viewIndex='registry'"
+					 >
+				</a>
+			</div>
+			<div class="col-sm-6 col-xs-12 col-centered">
+				<a href="#">
+					<img src="img/index/photos/photos.png" alt="Photos"
+					 ng-model="onHoverItem4"
+					 ng-init="onHoverItem4 = false"
+					 ng-mouseenter="onHoverItem4 = true"
+					 ng-mouseleave="onHoverItem4 = false"
+					 ng-class="{false: 'img-sizer', true: 'big-on-hover'}[onHoverItem4]"
+					 ng-mouseup="viewIndex='photos'"
+					 >
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- Bottom bar -->
+	<div class="clearfix main-space-padding"></div>
+	<div class="container bottom-bar">
+		<img src="img/banners/bottom_banner.jpg" alt="Bottom Banner" style="width:100%">
+	</div>
+	<!-- Include Angular.js -->
+    <script type="text/javascript" src="angular/angular.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script> -->
+	<!-- Include Bootstrap.js -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+</html>

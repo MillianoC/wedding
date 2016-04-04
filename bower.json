@@ -1,0 +1,12 @@
+{
+  "name": "nodewedding",
+  "description": "Chris and Angie's Wedding Site",
+  "main": "app.js",
+  "authors": [
+    "Chris Milliano <MillianoC@gmail.com>"
+  ],
+  "license": "UNLICENSED",
+  "moduleType": [],
+  "homepage": "www.year9finallymine.com",
+  "private": true
+}
